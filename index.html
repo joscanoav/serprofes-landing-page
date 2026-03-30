@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Desarrollo Web - IFCD0210</title>
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .bg-gradient-custom {
+            background: linear-gradient(to bottom right, #0A1F44, #0F2A5A, #051024);
+        }
+    </style>
+</head>
+<body class="bg-gradient-custom text-white min-h-screen relative">
+
+    <button id="scrollBtn" 
+        class="fixed top-6 right-6 z-50 p-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all shadow-lg hover:scale-110 active:scale-95 flex items-center justify-center"
+        title="Iniciar scroll automático">
+        <i data-lucide="play" class="text-green-400 ml-1" id="scrollIcon"></i>
+    </button>
+
+<div class="w-full flex justify-center items-center gap-16 py-4 bg-[#0A1F44] border-b border-white/10">
+
+    <!-- Serprofes -->
+    <img src="serprofes.png" 
+        class="h-10 md:h-12 object-contain opacity-90">
+
+    <!-- Gobierno -->
+    <div class="bg-white px-3 py-1 rounded-md">
+        <img src="ministerio-educacion.png" 
+            class="h-10 md:h-12 object-contain">
+    </div>
+
+    <!-- Comunidad de Madrid -->
+    <div class="bg-white px-3 py-1 rounded-md">
+        <img src="hacienda.png" 
+            class="h-10 md:h-12 object-contain">
+    </div>
+
+</div>
+
+    <section class="text-center px-4 py-24 max-w-6xl mx-auto flex flex-col items-center justify-center min-h-[80vh]">
+        <div class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-blue-400/30 px-5 py-2 rounded-full text-sm font-semibold mb-8 text-blue-300 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
+            <i data-lucide="sparkles" class="text-purple-400 w-4 h-4"></i> Bootcamp Tecnológico Intensivo
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
+            DESARROLLO DE <br/>
+            <span class="bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent drop-shadow-sm">
+                APLICACIONES WEB (IFCD0210)
+            </span>
+        </h1>
+
+        <p class="text-2xl md:text-3xl text-gray-200 max-w-3xl mx-auto mb-12 font-light">
+            Fórmate como <strong class="font-bold text-white">Full-Stack Developer con IA</strong>
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <span class="px-6 py-2 rounded-full bg-white/5 border border-white/20 text-sm md:text-base font-medium">100% Gratuito</span>
+            <span class="px-6 py-2 rounded-full bg-white/5 border border-white/20 text-sm md:text-base font-medium">Certificado Oficial</span>
+            <span class="px-6 py-2 rounded-full bg-white/5 border border-white/20 text-sm md:text-base font-medium">Prácticas en Empresa</span>
+            <span class="px-6 py-2 rounded-full bg-white/5 border border-white/20 text-sm md:text-base font-medium">Metodología Bootcamp</span>
+        </div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScubWaDqLI5tOPHJMZPfBgM0aF3xuGTUK0yFexrYVJyZXZ9uA/viewform" target="_blank" class="inline-block bg-gradient-to-r from-green-400 to-cyan-400 text-[#0A1F44] px-12 py-5 rounded-full text-xl font-bold shadow-[0_0_30px_rgba(74,222,128,0.3)] hover:shadow-[0_0_50px_rgba(74,222,128,0.5)] hover:scale-105 active:scale-95 transition-all duration-300">
+    RESERVAR MI PLAZA GRATIS
+</a>
+    </section>
+
+    <section class="py-24 px-4 max-w-6xl mx-auto text-center border-t border-white/5">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Aprende Haciendo <span class="text-cyan-400">(Learning by Doing)</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-16">
+            Formación práctica orientada al mundo laboral real. Olvídate de la teoría aburrida.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                <i data-lucide="check-circle-2" class="mx-auto mb-6 text-green-400 w-12 h-12"></i>
+                <h3 class="text-2xl font-bold mb-3">Sin experiencia previa</h3>
+                <p class="text-gray-400">Empezamos desde cero hasta llevarte al nivel profesional.</p>
+            </div>
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                <i data-lucide="code-2" class="mx-auto mb-6 text-cyan-400 w-12 h-12"></i>
+                <h3 class="text-2xl font-bold mb-3">De Frontend a Backend</h3>
+                <p class="text-gray-400">Domina todo el ciclo de desarrollo de una aplicación web.</p>
+            </div>
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                <i data-lucide="bot" class="mx-auto mb-6 text-purple-400 w-12 h-12"></i>
+                <h3 class="text-2xl font-bold mb-3">IA Integrada</h3>
+                <p class="text-gray-400">Aprende a programar potenciado por Inteligencia Artificial.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 max-w-6xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Tu ruta de aprendizaje</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-b from-[#0F2A5A] to-[#0A1F44] p-8 rounded-2xl border border-blue-500/30 relative overflow-hidden group">
+                <i data-lucide="monitor-smartphone" class="text-cyan-400 mb-6 relative z-10 w-10 h-10"></i>
+                <h3 class="font-bold text-2xl mb-4 relative z-10">1. Frontend</h3>
+                <p class="text-gray-300 relative z-10 text-lg leading-relaxed">HTML, CSS, JavaScript e Introducción a React.</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#0F2A5A] to-[#0A1F44] p-8 rounded-2xl border border-green-500/30 relative overflow-hidden group">
+                <i data-lucide="database" class="text-green-400 mb-6 relative z-10 w-10 h-10"></i>
+                <h3 class="font-bold text-2xl mb-4 relative z-10">2. Backend & Datos</h3>
+                <p class="text-gray-300 relative z-10 text-lg leading-relaxed">Node.js, APIs REST, MySQL y MongoDB.</p>
+            </div>
+            <div class="bg-gradient-to-b from-[#0F2A5A] to-[#0A1F44] p-8 rounded-2xl border border-purple-500/30 relative overflow-hidden group">
+                <i data-lucide="cloud" class="text-purple-400 mb-6 relative z-10 w-10 h-10"></i>
+                <h3 class="font-bold text-2xl mb-4 relative z-10">3. Despliegue & IA</h3>
+                <p class="text-gray-300 relative z-10 text-lg leading-relaxed">Git, GitHub, Cloud, Docker y Gemini API.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 text-center bg-black/20 border-y border-white/5">
+        <h2 class="text-3xl md:text-4xl font-bold mb-14 px-4">Trabajarás con herramientas reales</h2>
+        <div id="tools-container" class="flex flex-wrap justify-center items-center gap-10 md:gap-14 max-w-5xl mx-auto px-4 mb-16">
+            </div>
+        <div class="max-w-3xl mx-auto px-4">
+            <p class="text-xl text-cyan-300 font-semibold bg-cyan-900/30 py-4 px-6 rounded-xl border border-cyan-500/20 inline-block">
+                Terminarás desarrollando un Proyecto Full-Stack como portfolio profesional.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">¡Últimas plazas disponibles!</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 text-center mb-16">
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+                <i data-lucide="calendar" class="mx-auto mb-4 text-green-400 w-9 h-9"></i>
+                <p class="text-gray-400 mb-1 text-lg">Inicio</p>
+                <strong class="text-2xl">14 de Abril</strong>
+            </div>
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+                <i data-lucide="clock" class="mx-auto mb-4 text-blue-400 w-9 h-9"></i>
+                <p class="text-gray-400 mb-1 text-lg">L-V de</p>
+                <strong class="text-2xl">06:00 a 10:15h</strong>
+            </div>
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+                <i data-lucide="map-pin" class="mx-auto mb-4 text-purple-400 w-9 h-9"></i>
+                <p class="text-gray-400 mb-1 text-lg">Modalidad</p>
+                <strong class="text-2xl">Presencial / Virtual</strong>
+            </div>
+        </div>
+        <div class="text-center">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScubWaDqLI5tOPHJMZPfBgM0aF3xuGTUK0yFexrYVJyZXZ9uA/viewform" target="_blank" class="inline-block bg-gradient-to-r from-green-400 to-cyan-400 text-[#0A1F44] px-14 py-6 rounded-full text-2xl font-black shadow-[0_0_30px_rgba(74,222,128,0.3)] hover:shadow-[0_0_50px_rgba(74,222,128,0.5)] hover:scale-105 active:scale-95 transition-all duration-300">
+    ¡QUIERO MI PLAZA!
+</a>
+        </div>
+    </section>
+
+    <script>
+        // Inicializar Iconos
+        lucide.createIcons();
+
+        // Renderizar herramientas
+        const tools = [
+            { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
+            { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' },
+            { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
+            { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+            { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
+            { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
+            { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', invert: true },
+            { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg' },
+            { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg' },
+            { name: 'ChatGPT', icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/openai.svg', invert: true },
+            { name: 'Gemini', icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/google.svg', invert: true }
+        ];
+
+        const toolsContainer = document.getElementById('tools-container');
+        tools.forEach(tool => {
+            const div = document.createElement('div');
+            div.className = 'text-center group flex flex-col items-center';
+            div.innerHTML = `
+                <div class="h-20 flex items-center justify-center mb-3">
+                    <img src="${tool.icon}" alt="${tool.name}" 
+                         class="w-14 md:w-16 group-hover:scale-110 transition-transform duration-300 ${tool.invert ? 'filter invert opacity-90' : 'drop-shadow-lg'}">
+                </div>
+                <p class="text-gray-300 font-medium group-hover:text-cyan-400 transition-colors">${tool.name}</p>
+            `;
+            toolsContainer.appendChild(div);
+        });
+
+        // Lógica de Autoscroll
+        let autoScroll = false;
+        let animationFrameId;
+        const scrollBtn = document.getElementById('scrollBtn');
+        const scrollIcon = document.getElementById('scrollIcon');
+
+        function scrollStep() {
+            if (autoScroll) {
+                window.scrollBy(0, 1);
+                if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 2) {
+                    window.scrollTo(0, 0);
+                }
+                animationFrameId = requestAnimationFrame(scrollStep);
+            }
+        }
+
+        scrollBtn.addEventListener('click', () => {
+            autoScroll = !autoScroll;
+            if (autoScroll) {
+                scrollIcon.setAttribute('data-lucide', 'pause');
+                scrollIcon.classList.replace('text-green-400', 'text-cyan-400');
+                scrollStep();
+            } else {
+                scrollIcon.setAttribute('data-lucide', 'play');
+                scrollIcon.classList.replace('text-cyan-400', 'text-green-400');
+                cancelAnimationFrame(animationFrameId);
+            }
+            lucide.createIcons(); // Refrescar icono
+        });
+    </script>
+</body>
+</html>
